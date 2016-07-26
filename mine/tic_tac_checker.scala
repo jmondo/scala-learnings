@@ -16,7 +16,7 @@ class Board(val placements: List[String]) {
     if(winner != "") {
       println("The winner is...")
       println(winner)
-    } else if (placements.exists(_ == "_")) { // can also do { x => x == "_"}
+    } else if (placements.contains("_")) {
       println("Nobody wins!... YET")      
     } else {
       println("Nobody wins!")
